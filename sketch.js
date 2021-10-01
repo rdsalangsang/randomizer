@@ -1,9 +1,19 @@
+let circles= {{name:"red"},
+{name:"yellow"},
+{name:"violet"}};
+let randomIndex
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(600, 600);
 }
 
+
 function draw() {
-  background(220);
-  ///test ellipse
-  ellipse(200,200,300)
+  
+}
+
+function mousePressed(){
+  background(random(200, 220));
+  randomIndex=int(random(circles.length));
+  text(circles[randomIndex].name, 300,300);
+  circles.splice(randomIndex,1);
 }
