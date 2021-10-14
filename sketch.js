@@ -1,5 +1,6 @@
 let fortuneIndex;
 let animating = false;
+let button;
 let fortune = [
   { name: "Heck yeah." },
   { name: "no thoughts, head empty." },
@@ -27,6 +28,10 @@ let fortune = [
 function setup() {
   createCanvas(400, 400);
   background(200);
+  button = createButton("Click for my answer, I guess.");
+  button.mouseClicked(buttonPressed);
+  button.class("fortuneButton");
+
 }
 
 function draw() {
@@ -86,7 +91,7 @@ function fortunetell() {
     text("Am tired, come back later", 200, 155);
   }
 }
-function mouseClicked() {
+function buttonPressed() {
   animating = true;
   setTimeout(fortunetell, 1500);
 }

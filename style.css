@@ -5,3 +5,9 @@ html, body {
 canvas {
   display: block;
 }
+
+.fortuneButton{
+  padding:10px;
+  background-color: #949494;
+  margin-left: 90px;
+}
