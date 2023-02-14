@@ -1,16 +1,24 @@
 html, body {
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
 }
 canvas {
-  display: block;
+  display:block;
+  padding: 5px;
+  margin:auto;
+}
+
+.fortuneButton{
+  padding:5px;
+  background-color: #949494;
+  margin-left:20px;
 
 }
-.fortuneButton{
-  padding:10px;
-  background-color: #949494;
-  margin-left:10px
-}
 .fortuneInput{
+  margin-left: 100px;
   width:308px;
 }
